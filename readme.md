@@ -53,13 +53,15 @@ flyctl deploy
 ```
 ![](img/md_pc_fly_deploy2.png)
 
+>Note: 可使用上方的網址進行手動檢測
+
 由於預設會建立兩個虛擬機 請使用以下指令設定為一個
 ```sh
 fly scale count 1
 ```
 ![](img/md_pc_fly_deploy3.png)
 
-可使用上方的網址進行手動檢測
+
 ## License
 
 MIT
