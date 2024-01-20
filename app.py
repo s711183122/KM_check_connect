@@ -186,7 +186,7 @@ def main():
 def run():
     with app.app_context():
         check_server()
-@scheduler.task('cron', id='do_job_2', day='*/3', hour='00', minute='15', second='00', max_instances=10)
+@scheduler.task('cron', id='do_job_2', day=check_server_alive_para['day'], hour=check_server_alive_para['hour'], minute=check_server_alive_para['minute'], second=check_server_alive_para['second'], max_instances=10)
 def check_alive():
     with app.app_context():
         send_email_alive()
